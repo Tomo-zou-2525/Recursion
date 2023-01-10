@@ -1,11 +1,15 @@
-Class PhysicsThings(weight, height, speed):
+class PhysicsThings():
     GRAVITY = 9.8
 
-    def getWeight(weight):
-        return weight * GRAVITY
+    def getWeight(self, weight):
+        return weight * PhysicsThings.GRAVITY
 
-    def potentialEnergy(weight, height):
-        return weight * height * GRAVITY
+    def potentialEnergy(self, weight, height):
+        return weight * height * PhysicsThings.GRAVITY
 
-    def kineticEnergy(weight, speed):
-        return weight * (speed ** 2) / 2
+    def kineticEnergy(self, weight, speed):
+        return weight * speed ** 2 / 2
+
+
+print(PhysicsThings().getWeight(80))
+print(PhysicsThings().kineticEnergy(80, 10))
