@@ -1,5 +1,5 @@
 def echo(val):
-    if val % 15 == 0:
+    if val % 5 == 0 and val % 3 == 0:
         return print("fizzbuzz")
     elif val % 5 == 0:
         return print("buzz")
