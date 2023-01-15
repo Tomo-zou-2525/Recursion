@@ -4,4 +4,14 @@
 # ローンの金額 initialLoan、期日までに払われたかどうかをブーリアンで表した
 # didPayOnTime を入力として受け取り、合計金額を返す interestsPaid という関数を作成してください。
 
-def interestsPaid(didPayOnTime):
+def interestsPaid(initailLoan, didPayOnTime):
+    if didPayOnTime == True:
+        initailLoan = 2.5 + initailLoan * 1.02
+    else:
+        initailLoan = 2.5 + initailLoan * 1.15
+    print(initailLoan)
+    return initailLoan  # 合計金額
+
+
+interestsPaid(100, True)  # 104.5
+interestsPaid(100, False)  # 117.5
