@@ -9,7 +9,20 @@ from itertools import count
 
 
 # rollingDice(10, 61)
-def rollingDice():
+# def rollingDice():
+#     A, B = map(int, input().split())
+#     print(A)
+#     print("---")
+#     print(B)
+#     if B <= A*6 and B >= A:
+#         print('Yes')
+#     else:
+#         print('No')
+
+
+# rollingDice()
+
+def rollingDice2():
     A, B = map(int, input().split())
     print(A)
     print("---")
@@ -20,4 +33,4 @@ def rollingDice():
         print('No')
 
 
-rollingDice()
+rollingDice2()
