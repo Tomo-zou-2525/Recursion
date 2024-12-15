@@ -1,12 +1,15 @@
 def upperCaseDomain(email):
-    # 関数を完成させてください
-    find_context = email.find("@")
-    print(find_context)
+    return email.split("@")[1].upper()    
 
-    serch_context = email[find_context:]
-    print(serch_context)
+# def upperCaseDomain(email):
+#     # 関数を完成させてください
+#     find_context = email.find("@")
+#     print(find_context)
 
-    upper_text = serch_context.upper()
-    print(upper_text)
+#     serch_context = email[find_context:]
+#     print(serch_context)
 
-upperCaseDomain("www.example@com")
+#     upper_text = serch_context.upper()
+#     print(upper_text)
+
+print(upperCaseDomain("www.example@com"))
