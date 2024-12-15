@@ -1,4 +1,6 @@
-l = list(map(str, input().split()))
+# l = list(map(str, input().split()))
+
+var = str
 
 print(l)
 
