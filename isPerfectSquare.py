@@ -17,4 +17,4 @@ def distance(x,y):
     # print(val2)
     return hadDecimal(val2)
 
-print(isPerfectSquare(7,3))
+print(isPerfectSquare(7,24))
